@@ -1,0 +1,1208 @@
+<!-- https://cssgradient.io/ -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SG Services</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <style>
+        body {
+            font-family: century-gothic;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-inner .carousel-item>div {
+                display: none;
+            }
+
+            .carousel-inner .carousel-item>div:first-child {
+                display: block;
+            }
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-start,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
+        @media (min-width: 768px) {
+
+            .carousel-inner .carousel-item-right.active,
+            .carousel-inner .carousel-item-next,
+            .carousel-item-next:not(.carousel-item-start) {
+                transform: translateX(25%) !important;
+            }
+
+            .carousel-inner .carousel-item-left.active,
+            .carousel-item-prev:not(.carousel-item-end),
+            .active.carousel-item-start,
+            .carousel-item-prev:not(.carousel-item-end) {
+                transform: translateX(-25%) !important;
+            }
+
+            .carousel-item-next.carousel-item-start,
+            .active.carousel-item-end {
+                transform: translateX(0) !important;
+            }
+
+            .carousel-inner .carousel-item-prev,
+            .carousel-item-prev:not(.carousel-item-end) {
+                transform: translateX(-25%) !important;
+            }
+
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                background-color: transparent;
+                background-image: none;
+            }
+
+            .carousel-control-prev-icon::after,
+            .carousel-control-next-icon::after {
+                content: '';
+                /* Clear the default icon */
+                display: inline-block;
+                width: 1em;
+                /* Adjust size as needed */
+                height: 1em;
+                /* Adjust size as needed */
+                border: solid white;
+                /* Set the border color to black */
+                border-width: 0 2px 2px 0;
+                /* Create an arrow shape */
+                padding: 3px;
+                /* Adjust padding for size */
+                transform: rotate(135deg);
+                /* Rotate for the previous icon */
+            }
+
+            .carousel-control-next-icon::after {
+                transform: rotate(-45deg);
+                /* Rotate for the next icon */
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 50px;
+                height: 50px;
+            }
+
+            .carousel-control-prev {
+                left: -60px;
+            }
+
+            .carousel-control-next {
+                right: -60px;
+            }
+        }
+    </style>
+    <style>
+        body {
+            margin: auto;
+            background: #1E3426;
+            color: #DEDEDE;
+        }
+
+        .aboutSec .accordion-button::after {
+            content: '+';
+            font-size: 1.5rem;
+            float: right;
+        }
+
+        .aboutSec .accordion-button.collapsed::after {
+            content: '+';
+        }
+
+        .aboutSec .accordion-button:not(.collapsed)::after {
+            content: '-';
+        }
+
+        .custom-navbar {
+            background-color: black !important;
+            /* Sets the background color to red */
+        }
+
+        .custom-navbar .nav-link.active {
+            color: #DAAF4D !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ----------------------------------------------------------------------------- navbar ------------------------------------------------------------------ -->
+    <nav class="navbar custom-navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""><img src="./static/images/logo.png" alt="" style="height: 50px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item" style="padding-right: 20px;">
+                        <a class="nav-link active" aria-current="page" style="color: #DAAF4D;" href="#">Home</a>
+                    </li> -->
+                    <li class="nav-item" style="padding-right: 20px;">
+                        <a class="nav-link" href="#AboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 20px;">
+                        <a class="nav-link" href="#Products">Products</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 20px;">
+                        <a class="nav-link" href="#Services">Services</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 20px;">
+                        <a class="nav-link" href="#Results">Results</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 20px;">
+                        <a class="nav-link" href="#Certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 30px;">
+                        <a class="nav-link" href="#Careers">Careers</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <a href="#Contact"><button class="navSubmitBtn" type="button">Get in Touch</button></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+    <!-- -------------------------------------------------------------------------------Home --------------------------------------------------------------- -->
+    <section style="background-image: url('./static/images/bg.png');width: 100%;">
+        <div style="width: 90%;margin: auto;" class="row">
+            <div class="col-lg-7">
+                <br><br>
+                <p style="font-size: 35px;color: white;width: 80%;">Trade Smarter with Automated Buy/Sell Signals</p>
+                <p style="width: 85%;font-size: 18px;">Leverage advanced technical indicators to maximize your trading
+                    potential. Our script integrates seamlessly with platforms like TradingView for real-time insights.
+                </p>
+                <!-- <button class="navSubmitBtn" style="color: white;padding: 10px 30px;">Join Today</button> -->
+            </div>
+            <div class="col-lg-5">
+                <div style="min-height: 50px;"></div>
+                <img src="./static/images/3d-rendering-financial-neon-bull (1) 1.png" alt="" style="width: 100%;">
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------ Data Counter ---------------------------------------------------------- -->
+    <section id="Products" style="background-image: url('./static/images/bg2.png');width: 100%;">
+        <br><br><br>
+        <div class="row m-auto text-center" style="width: 90%;margin: auto;">
+            <div class="col-md-3 col-sm-6" style="padding: 10px;">
+                <div class="counterCard">
+                    <img src="./static/images/counter/Information Desk Customer.png" alt="img_1" style="height: 40px;">
+                    <p style="color: white;font-size: 48px;font-weight: 600;margin-bottom: 0;"><span
+                            class="counter">200</span><span style="font-size: 38px;"> +</span></p>
+                    <p style="color: white;font-size: 42px;">Happy Clients</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6" style="padding: 10px;">
+                <div class="counterCard">
+                    <img src="./static/images/counter/Projector Board.png" alt="img_1" style="height: 40px;">
+                    <p style="color: white;font-size: 48px;font-weight: 600;margin-bottom: 0;"><span
+                            class="counter">10</span><span style="font-size: 38px;"> +</span></p>
+                    <p style="color: white;font-size: 42px;">Projects</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6" style="padding: 10px;">
+                <div class="counterCard">
+                    <img src="./static/images/counter/Customer Support.png" alt="img_1" style="height: 40px;">
+                    <p style="color: white;font-size: 48px;font-weight: 600;margin-bottom: 0;"><span
+                            class="counter">5000</span></p>
+                    <p style="color: white;font-size: 35px;">Hours of Support</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6" style="padding: 10px;">
+                <div class="counterCard">
+                    <img src="./static/images/counter/Office Worker.png" alt="img_1" style="height: 40px;">
+                    <p style="color: white;font-size: 48px;font-weight: 600;margin-bottom: 0;"><span
+                            class="counter">20</span><span style="font-size: 38px;"> +</span></p>
+                    <p style="color: white;font-size: 42px;">Workers</p>
+                </div>
+            </div>
+
+        </div>
+        <br><br><br>
+    </section>
+    <!-- -------------------------------------------------------------------------------About Us --------------------------------------------------------------- -->
+    <section id="AboutUs" style="background-image: url('./static/images/bg.png');width: 100%;">
+        <br>
+        <div style="width: 90%;margin: auto;">
+            <h1 class="title">About Us</h1>
+            <br><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="accordion aboutSec" id="accordionExample">
+                        <div class="accordion-item aboutSec1">
+                            <h2 class="accordion-header aboutSe2" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Who we are <p style="display: none;">
+                                        <b>SG Services: Turning Ambitions into Achievements</b> <br>
+                                        Founded on 8th April 2024, SG Services Private Limited represents the
+                                        culmination of Sathesh Goud’s
+                                        visionary dream to build a global platform where individuals can unlock their
+                                        true potential. From his
+                                        humble beginnings as a self-made entrepreneur hailing from a lower-middle-class
+                                        family, Sathesh
+                                        Goud embodies the spirit of perseverance and leadership. His journey inspires
+                                        thousands to break
+                                        barriers and embrace opportunities to achieve entrepreneurial success.
+                                        <br><br>
+                                        At SG Services, we redefine success with a bold philosophy:
+                                        <br>
+                                        <b>High Risk = High Profit | Low Risk = Low Profit | No Risk = No Profit.</b>
+                                        <br>
+                                        Our mission is to empower individuals to embrace calculated risks as
+                                        steppingstones to financial
+                                        freedom and growth. We see challenges as opportunities to innovate, enabling our
+                                        customers and
+                                        investors to carve out paths to prosperity in a fast-evolving world.
+                                        <br>
+                                        Through cutting-edge technology, forward-thinking strategies, and unwavering
+                                        dedication, we are
+                                        shaping a future where dreams are no longer distant but within reach
+                                    </p>
+                                </button>
+                            </h2>
+                            <div style="display: none;" id="collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What we do <p style="display: none;">
+                                        At <b>SG Services</b>, we redefine the boundaries of technology and financial
+                                        innovation. Our services are
+                                        tailored to empower every individual with the tools to succeed:
+                                        Our mission is simple yet powerful: <b>Transform customers and investors into
+                                            entrepreneurs</b> by
+                                        equipping them with innovative tools, proven strategies, and unparalleled
+                                        opportunities for longterm success.
+                                        <!-- <ul>
+                                        <li><b>AI-Powered Trading BOTs:</b> Intelligent systems designed to automate
+                                            trades,
+                                            boost efficiency,
+                                            and enhance profitability effortlessly.</li>
+                                        <li><b>Cryptocurrency Sales:</b> Guiding clients to explore, invest, and thrive
+                                            in the
+                                            ever-expanding
+                                            digital economy.</li>
+                                        <li><b>Custom Script Sales:</b> Crafting personalized trading solutions that
+                                            enable
+                                            informed and
+                                            strategic decision-making.
+                                        </li>
+                                    </ul> -->
+                                        <br><br>
+                                        <span>&#8226</span> <b>AI-Powered Trading BOTs:</b> Intelligent systems designed
+                                        to automate
+                                        trades,
+                                        boost efficiency,
+                                        and enhance profitability effortlessly. <br>
+                                        <span>&#8226</span> <b>Cryptocurrency Sales:</b> Guiding clients to explore,
+                                        invest, and thrive
+                                        in the
+                                        ever-expanding
+                                        digital economy. <br>
+                                        <span>&#8226</span> <b>Custom Script Sales:</b> Crafting personalized trading
+                                        solutions that
+                                        enable
+                                        informed and
+                                        strategic decision-making.
+                                    </p>
+                                </button>
+                                <p style="display: none;" id="collapseTwo">What we doWhat we doWhat we doWhat we do
+                                </p>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample" style="display: none;">
+                                <!-- <div class="accordion-body">
+                                        This is the second item's accordion body.
+                                    </div> -->
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Commitment <p style="display: none;">Every customer is a valued <b>team player</b>
+                                        in our
+                                        shared journey. We thrive on collaboration, trust, and
+                                        innovation, ensuring that our platform becomes a launchpad for financial
+                                        empowerment. For us,
+                                        success is mutual, and every milestone we achieve is built on a foundation of
+                                        shared growth and
+                                        vision.
+                                    </p>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Why to choose us <p style="display: none;">
+                                        <b>• Visionary Leadership:</b> Under the guidance of Sathesh Goud, SG Services
+                                        embodies a
+                                        relentless commitment to innovation and excellence. <br><br>
+                                        <b>• Innovative Solutions:</b> Utilizing cutting-edge AI and blockchain
+                                        technology to
+                                        redefine trading
+                                        and investment landscapes.<br><br>
+                                        <b>• Global Reach:</b> Cultivating a worldwide network of entrepreneurs and
+                                        investors
+                                        united by a
+                                        shared vision.<br><br>
+                                        <b>• Customer-Centric Approach:</b> Recognizing each customer as a partner and
+                                        collaborator in our
+                                        pursuit of success.
+
+                                    </p>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="content-area" style="padding-top: 0px;color: white;">
+                        <p><b>SG Services: Turning Ambitions into Achievements</b> <br>
+                            Founded on 8th April 2024, SG Services Private Limited represents the
+                            culmination of Sathesh Goud’s
+                            visionary dream to build a global platform where individuals can unlock their
+                            true potential. From his
+                            humble beginnings as a self-made entrepreneur hailing from a lower-middle-class
+                            family, Sathesh
+                            Goud embodies the spirit of perseverance and leadership. His journey inspires
+                            thousands to break
+                            barriers and embrace opportunities to achieve entrepreneurial success.
+                            <br><br>
+                            At SG Services, we redefine success with a bold philosophy:
+                            <br>
+                            <b>High Risk = High Profit | Low Risk = Low Profit | No Risk = No Profit.</b>
+                            <br>
+                            Our mission is to empower individuals to embrace calculated risks as
+                            steppingstones to financial
+                            freedom and growth. We see challenges as opportunities to innovate, enabling our
+                            customers and
+                            investors to carve out paths to prosperity in a fast-evolving world.
+                            <br>
+                            Through cutting-edge technology, forward-thinking strategies, and unwavering
+                            dedication, we are
+                            shaping a future where dreams are no longer distant but within reach.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <script>
+                document.querySelectorAll('.accordion-button').forEach(button => {
+                    button.addEventListener('click', function () {
+                        const contentArea = document.querySelector('.content-area');
+                        // console.log(`${this.innerHTML}`);
+
+                        const tempDiv = document.createElement('div');
+                        tempDiv.innerHTML = `${this.innerHTML}`;
+                        const pElement = tempDiv.querySelector('p');
+                        // console.log(pElement);
+
+                        // const extractedText = pElement ? pElement.textContent.replace(/\s+/g, ' ').trim() : '';
+                        const extractedHTML = pElement ? pElement.innerHTML.replace(/\s+/g, ' ').trim() : '';
+                        // console.log(extractedText);
+
+                        contentArea.innerHTML = `<p>${extractedHTML}.</p>`;
+                    });
+                });
+            </script>
+        </div>
+    </section>
+    <section style="background-image: url('./static/images/bg2.png');width: 100%;">
+        <br><br>
+        <div style="margin: auto;width: 90%;">
+            <div class="row m-auto">
+                <div class="col-sm-4">
+                    <img src="./static/images/about.jpeg" style="width: 60%;" alt="">
+                </div>
+                <div class="col-sm-8 text-light">
+                    <div class="row m-auto">
+                        <div class="col-lg-4" style="padding-left: 0px;color: #DAAF4D;">
+                            <h2 style="margin-bottom: 0px;">Sathesh Goud</h2>
+                            <img src="./static/images/Line 1.png" alt="">
+                        </div>
+                        <div class="col-lg-8" style="padding-left: 0px;color: #DAAF4D;font-size: 24px;">
+                            <p><i>A Sovereign Visionary in Marketing and Trading</i></p>
+                        </div>
+                    </div>
+                    <br>
+                    <p>With a regal legacy of over 20 years in marketing brilliance and 11 years of unmatched mastery in
+                        the dynamic
+                        realms of crypto and forex trading, Sathesh Goud is a name that reigns supreme in the spheres of
+                        innovation,
+                        leadership, and excellence. A trailblazing pioneer, he has seamlessly merged traditional
+                        business wisdom
+                        with avant-garde trading strategies, creating a dynasty of thriving startups and ascending as a
+                        distinguished
+                        seed investor. His discerning patronage has transformed visionary entrepreneurs into success
+                        stories,
+                        cementing his status as a royal force in industry.</p>
+                    <p>His introduction of state-of-the-art training programs for aspiring traders and professionals is
+                        nothing
+                        short of majestic, equipping them with the clarity and confidence to navigate the intricacies of
+                        global
+                        markets. Whether mentoring rising enterprises, revolutionizing trading methodologies, or
+                        delivering
+                        transformative training programs, Sathesh embodies the essence of a visionary ruler, leading his
+                        kingdom of
+                        success with resilience, foresight, and grace.</p>
+                    <p>Step into the realm of Sathesh Goud, where knowledge is a crown, opportunity a kingdom, and
+                        vision the
+                        scepter that shapes the future. Join the legacy and be part of a noble journey that transforms
+                        ambition into
+                        reality.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <!-- ------------------------------------------------------------------------------- Our Products --------------------------------------------------------------- -->
+    <section id="Products" style="background-image: url('./static/images/bg.png');width: 100%;">
+        <br>
+        <div class="products" style="width: 90%;margin: auto;">
+            <h1 class="title">Our Products</h1> <br>
+            <div class="row m-auto">
+                <div style="background-color: transparent;width: 40%;">
+                    <img src="./static/images/Rectangle 146428.png" alt="">
+                </div>
+                <div style="position: relative;width: 58%;" class="productsCard">
+                    <p style="color:#F4F4F4;font-size: 36px;font-weight: bold;margin-bottom: 5px;">SG Trading Bot
+                    </p>
+                    <img style="position: absolute;top: 10px;right: 10px;" class="sliding-image hidden"
+                        src="./static/images/bot icon.png" alt="bot image">
+                    <p style="color:#F4F4F4;font-size: 18px;margin-bottom:10px;">Benefits</p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <ul style="color: #D3D2E1;font-size: 18px;">
+                                <li>Active income opportunities</li>
+                                <li>Semi-automated trading solutions</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <p class="productPrice"><span id="costTag">5000</span>/- INR
+                            </p>
+                        </div>
+                    </div>
+                    <p style="color:#F4F4F4;font-size: 18px;margin-bottom:10px;">Choose Your Plan:</p>
+                    <button id="botBasic" class="productSubmitBtnDis"
+                        style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.999);"
+                        onclick="toggleBot('botBasic')">Basic</button>
+                    <button id="botPremium" class="productSubmitBtn" style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.999);"
+                        onclick="toggleBot('botPremium')">Premium</button>
+                    <br>
+                    <button id="botQuaterly" class="productSubmitBtn"
+                        style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.999);"
+                        onclick="planType('botQuaterly')">Quaterly</button>
+                    <button id="botMonthly" class="productSubmitBtnDis"
+                        style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.999);"
+                        onclick="planType('botMonthly')">Monthly</button>
+                    <button id="botHalfYear" class="productSubmitBtnDis"
+                        style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.999);"
+                        onclick="planType('botHalfYear')">Half-Year</button>
+                    <button id="botYearly" class="productSubmitBtnDis"
+                        style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.999);"
+                        onclick="planType('botYearly')">Yearly</button>
+                </div>
+            </div>
+            <br>
+        </div>
+        <script>
+            function toggleBot(plan) {
+                const otherPlan = plan === "botBasic" ? "botPremium" : "botBasic";
+                const selectedPlan = document.getElementById(plan);
+                const deselectedPlan = document.getElementById(otherPlan);
+
+                // Update class names
+                selectedPlan.className = 'productSubmitBtn';
+                deselectedPlan.className = 'productSubmitBtnDis';
+
+                // Update costTag based on the selected plan
+                const costTag = document.getElementById('costTag');
+                costTag.innerText = plan === "botBasic" ? '3000' : '5000';
+                DisAllPlanTypes()
+                document.getElementById("botQuaterly").className = 'productSubmitBtn';
+            }
+
+            function planType(type) {
+                const isBasic = document.getElementById('botBasic').classList.contains("productSubmitBtn");
+                DisAllPlanTypes();
+
+                const cost = document.getElementById('costTag');
+
+                // Define cost mappings for basic and premium plans
+                const costMap = {
+                    botQuaterly: isBasic ? '3000' : '5000',
+                    botMonthly: isBasic ? '6000' : '10000',
+                    botHalfYear: isBasic ? '15000' : '25000',
+                    botYearly: isBasic ? '30000' : '50000',
+                };
+
+                // Update the class and cost based on the selected type
+                document.getElementById(type).className = 'productSubmitBtn';
+                cost.innerText = costMap[type];
+            }
+            function DisAllPlanTypes() {
+                document.getElementById("botQuaterly").className = 'productSubmitBtnDis';
+                document.getElementById("botMonthly").className = 'productSubmitBtnDis';
+                document.getElementById("botHalfYear").className = 'productSubmitBtnDis';
+                document.getElementById("botYearly").className = 'productSubmitBtnDis';
+            }
+        </script>
+    </section>
+    <br><br>
+    <!-- ------------------------------------------------------------------------------- Our Services --------------------------------------------------------------- -->
+    <section id="Services" style="background-image: url('./static/images/bg2.png');width: 100%;">
+        <br>
+        <div style="width: 90%;margin: auto;">
+            <h1 class="title" style="margin-bottom: 0px;">Our Services</h1>
+            <span style="font-weight: 600;">Your ultimate guide to smarter trading <br> decisions.</span>
+
+            <div class="row m-auto">
+                <div class="servicesCard">
+                    <div class="innerSerCard">
+                        <img class="sliding-image hidden" src="./static/images/service/trading icon.png" alt=""
+                            style="height: 50px;">
+                        <p>Trading Automation</p>
+                        <br><br><br><br><br><br>
+                    </div>
+                </div>
+                <div class="servicesCard">
+                    <div class="innerSerCard">
+                        <img class="sliding-image hidden" src="./static/images/service/revenue stream icon.png" alt=""
+                            style="height: 50px;">
+                        <p>Revenue Streams</p>
+                        <br><br><br><br><br><br>
+                    </div>
+                </div>
+                <div class="servicesCard">
+                    <div class="innerSerCard">
+                        <img class="sliding-image hidden" src="./static/images/service/certificate icon.png" alt=""
+                            style="height: 50px;">
+                        <p>Certified for Excellence</p>
+                        <br><br><br><br><br><br>
+                    </div>
+                </div>
+                <div class="servicesCard">
+                    <div class="innerSerCard">
+                        <img class="sliding-image hidden" src="./static/images/service/global icon.png" alt=""
+                            style="height: 50px;">
+                        <p>Global Presence</p>
+                        <br><br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+    </section>
+
+    <!-- ------------------------------------------------------------------------------- Results --------------------------------------------------------------- -->
+    <section id="Results" style="background-image: url('./static/images/bg.png');width: 100%;">
+        <br>
+        <div id="myCarousel" class="carousel slide" style="width: 90%;margin: auto;" data-bs-ride="carousel">
+            <h1 class="title">Results</h1>
+            <div class="carousel-inner w-100 text-center">
+                <div class="carousel-item active">
+                    <div class="col-md-4 resultCard">
+                        <p>Snapshot of Traders Using SG script Indicators or Trading View #Bitcoin</p>
+                        <img src="./static/images/results/res_1.png" alt="profit booked" class="clickable-image"
+                            style="width: 99%; margin: auto;"><br><br>
+                        <p>Indicator Name - BB Strategy <br>
+                            Time Frame - 3 minutes <br>
+                            Candle Type - Heikin Ashi</p>
+                        <h4>Profit - 1707.26 USD</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4 resultCard">
+                        <p>Snapshot of Traders Using SG script Indicators or Trading View #Bitcoin</p>
+                        <img src="./static/images/results/res_1.png" alt="profit booked" class="clickable-image"
+                            style="width: 99%; margin: auto;"><br><br>
+                        <p>Indicator Name - BB Strategy <br>
+                            Time Frame - 3 minutes <br>
+                            Candle Type - Heikin Ashi</p>
+                        <h4>Profit - 1707.26 USD</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4 resultCard">
+                        <p>Snapshot of Traders Using SG script Indicators or Trading View #Bitcoin</p>
+                        <img src="./static/images/results/res_1.png" alt="profit booked" class="clickable-image"
+                            style="width: 99%; margin: auto;"><br><br>
+                        <p>Indicator Name - BB Strategy <br>
+                            Time Frame - 3 minutes <br>
+                            Candle Type - Heikin Ashi</p>
+                        <h4>Profit - 1707.26 USD</h4>
+                    </div>
+                </div>
+                <!-- <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="https://via.placeholder.com/640x360?text=4">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <br><br>
+    <!-- ------------------------------------------------------------------------------- Certificates --------------------------------------------------------------- -->
+    <!-- Pop-up Container -->
+    <div id="popup" class="popup hidden2">
+        <div class="popup-content">
+            <span id="close-popup" class="close">&times;</span>
+            <img id="popup-image" src="" alt="Popup Image">
+        </div>
+    </div>
+    <section id="Results" style="background-image: url('./static/images/bg2.png');width: 100%;">
+        <br>
+        <h1 class="title" style="margin-left: 5%;">Certificates</h1>
+
+        <div id="myCarousel3" class="carousel slide" style="width: 90%;margin: auto;" data-bs-ride="carousel2">
+            <div class="carousel-inner w-100">
+                <div class="carousel-item carousel-item2 active">
+                    <div class="col-md-4" style="background: transparent;">
+                        <div class="card-body text-center" style="padding: 20px;">
+                            <p style="font-size: 20px;" class="card-title">Certificate of Incorporation</p>
+                            <br>
+                            <img src="./static/images/certificates/image_30.png" class="card-img-top"
+                                alt="certificate of Incorporation" style="border-radius: 0;width: 80%;margin: auto;">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item2">
+                    <div class="col-md-4" style="background: transparent;">
+                        <div class="card-body text-center" style="padding: 20px;">
+                            <p style="font-size: 20px;" class="card-title">PAN CARD</p>
+                            <br>
+                            <img src="./static/images/certificates/image 31.png" class="card-img-top"
+                                alt="certificate of Incorporation" style="border-radius: 0;width: 80%;margin: auto;">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item2">
+                    <div class="col-md-4" style="background: transparent;">
+                        <div class="card-body text-center" style="padding: 20px;">
+                            <p style="font-size: 20px;" class="card-title">GST CERTIFICATION</p>
+                            <br>
+                            <img src="./static/images/certificates/image 32.png" class="card-img-top"
+                                alt="certificate of Incorporation" style="border-radius: 0;width: 80%;margin: auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br><br>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------- Career --------------------------------------------------------------- -->
+    <section id="Careers" style="background-image: url('./static/images/bg.png');width: 100%;">
+        <br>
+        <div style="width: 90%;margin: auto;" style="background-color: transparent;">
+
+            <h1 class="title">Career</h1><br><br>
+            <div class="accordion careerSec" id="accordionPanelsStayOpenExample">
+
+                <div class="accordion-item"
+                    style="background-color: transparent; color: white;border: 1px solid #DAAF4D;border-radius: 0px;">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Business Development Executive
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                        <div class="accordion-body scrollable">
+                            A business development executive is a significant member of a company's growth strategy –
+                            responsible for identifying and generating new business opportunities, building
+                            relationships with potential clients and driving revenue growth. <br>
+
+                            A business development executive (BDE) is distinct from an account executive, as the former
+                            focuses on acquiring new clients rather than managing existing ones. <br>
+
+                            The roles and responsibilities of business development executives involve analysing market
+                            trends to create strategies, identifying new sales leads, and working towards expanding the
+                            organisation's customer base. <br><br>
+                            <b>Responsibilities</b>
+                            <li>Respond promptly to any issues that directly affect sales.</li>
+                            <li>Hire, onboard and train new team members in the sales team.</li>
+                            <li>Directly oversee the growth of assigned markets and clients.</li>
+                            <li>Represent the company at industry events, meetings and conferences.</li>
+                            <li>Track and analyse sales data to identify trends and opportunities for growth.</li>
+                            <li>Achieve monthly sales targets with demonstrable key performance indicators (KPIs).</li>
+                            <li>Present monthly and quarterly sales reports to senior board members and investors </li>
+                            <br>
+                            <b>Required skills and qualifications</b>
+                            <li>Bachelor's degree in business administration, marketing, sales or a related field.</li>
+                            <li>1+ years of experience in sales or business development roles.</li>
+                            <li>Effective communication, interpersonal and negotiating skills.</li>
+                            <li>Ability to build and maintain relationships with clients and stakeholders.</li>
+                            <li>Adept in networking, project management and problem-solving.</li>
+                            <li>Possess strong creative and strategic thinking skills to develop effective sales
+                                strategies through delegation, prioritisation and execution for business growth.</li>
+                            <li>Ability to adapt to the company's culture effectively and lead other teams.</li>
+                            <br>
+
+                            <b>NOTE: SALARY AS PER COMPANY NORMS (starts from 20k to …)</b>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item"
+                    style="background-color: transparent; color: white;border: 1px solid #DAAF4D;border-radius: 0px;">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Business Development Manager
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                        <div class="accordion-body scrollable">
+                            <b>Description:</b>
+                            <ul>
+                                <li>Developing a business development strategy focused on financial gain</li>
+                                <li>Arranging business development meetings with prospective clients</li>
+                                <li>Develop a growth strategy focused both on financial gain and customer satisfaction
+                                </li>
+                                <li>Conduct research to identify new markets and customer needs</li>
+                                <li>Arrange business meetings with prospective clients</li>
+                                <li>Promote the company’s products/services addressing or predicting client's objectives
+                                </li>
+                                <li>Prepare sales contacts ensuring adherence to law-established rules and guidelines
+                                </li>
+                                <li>Keep records of sales, revenue, invoices etc.</li>
+                                <li>Provide trustworthy feedback and after-sales support</li>
+                                <li>Build long-term relationships with new and existing customers</li>
+                                <li>Develop entry level staff into valuable salespeople</li>
+                            </ul>
+                            <b>Requirements and skills</b>
+                            <ul>
+                                <li>Proven working experience as a business development manager, sales executive or a
+                                    relevant role</li>
+                                <li>Team handling capacity</li>
+                                <li>Convincing capacity</li>
+                                <li>Proven sales track record</li>
+                                <li>Experience in customer support is a plus</li>
+                                <li>Proficiency in MS Office and CRM software (e.g. Salesforce)</li>
+                                <li>Proficiency in English, Telugu, Hindi</li>
+                                <li>Market knowledge</li>
+                                <li>Communication and negotiation skills</li>
+                                <li>Ability to build rapport</li>
+                                <li>Time management and planning skills</li>
+                                <li>MBA/BSc/BA in business administration, sales or relevant field</li>
+                                <li>Bachelor’s degree in business administration, marketing, sales or a related field.
+                                </li>
+                                <li>2+ years of experience in sales or business development roles.</li>
+                            </ul>
+                            <b>NOTE: SALARY AS PER COMPANY NORMS (starts from 20k to …)</b>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item"
+                    style="background-color: transparent; color: white;border: 1px solid #DAAF4D;border-radius: 0px;">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Receptionist
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body scrollable">
+                            <b>Skills:</b> <br>
+                            <li>Excellent verbal communication</li>
+                            <li>Good telephone communication etiquette</li>
+                            <li>Organized and resourceful</li>
+                            <li>Customer-focused</li>
+                            <li>Active listener</li>
+                            <li>Adept at prioritizing, scheduling and multitasking</li>
+                            <li>Ability to handle office equipment, such as the telephone system, printer and the fax
+                                machine</li>
+                            <li>Fast and eager learner</li>
+                            <br>
+                            <b>Responsibilities</b>
+                            <li>Greeting visitors</li>
+                            <li>Managing security and telecommunications systems</li>
+                            <li>Handling queries and complaints via phone, email and general correspondence</li>
+                            <li>Transferring calls as necessary</li>
+                            <li>Taking and ensuring messages are passed to the appropriate staff member in time</li>
+                            <li>Managing meeting room availability</li>
+                            <li>Receiving, sorting, distributing and dispatching daily mail</li>
+                            <li>Preparing vouchers</li>
+                            <li>Handling transcription, printing, photocopying and faxing</li>
+                            <li>Recording and maintaining office expenses</li>
+                            <li>Handling travel arrangements</li>
+                            <li>Coordinating internal and external events</li>
+                            <li>Managing office inventory such as stationery, equipment and furniture</li>
+                            <li>Overseeing office services like cleaners and maintenance service providers</li>
+                            <li>Assisting the HR team with recruitment, onboarding and termination processes</li>
+                            <li>Maintaining safety and hygiene standards of the reception area</li>
+                            <br>
+                            <b>NOTE: SALARY AS PER COMPANY NORMS (starts from 15k to 25k)</b>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------- Reviews --------------------------------------------------------------- -->
+    <section id="Results" style="background-image: url('./static/images/bg2.png');width: 100%;">
+        <br>
+        <div id="myCarousel2" class="carousel slide" style="width: 90%;margin: auto;" data-bs-ride="carousel2">
+            <h1 class="title">What Our Customers Say</h1>
+            <p>Your ultimate guide to smarter trading decisions.</p>
+
+            <div class="carousel-inner w-100">
+                <div class="carousel-item carousel-item2 active">
+                    <div class="col-md-4"
+                        style="background: linear-gradient(180deg, rgba(218, 175, 77, 1) 0%, rgba(30, 52, 38, 0.5) 90%);margin-right: 10px;">
+                        <div class="card-body" style="padding: 20px;  border: 1px solid #DAAF4D;">
+                            <img class="sliding-image hidden" src="./static/images/reviews/image 26.png" alt="">
+                            <p style="font-size: 24px;text-align: left;font-weight: 600;margin-bottom: 0px;"
+                                class="card-title">Aaliya</p>
+                            <p style="font-size: 16px;text-align: left;color: #D3D2E1;" class="card-title">
+                                Software Engineer <br>
+                                I couldn't believe how easy and fast the process was with [Your Company Name].
+                                Within 24 hours, I was approved for a loan, and now I'm driving my dream car!
+                                The team was incredibly helpful and answered all my questions. Highly recommend!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item2">
+                    <div class="col-md-4"
+                        style="background: linear-gradient(180deg, rgba(218, 175, 77, 1) 0%, rgba(30, 52, 38, 0.5) 90%);margin-right: 10px;">
+                        <div class="card-body" style="padding: 20px;  border: 1px solid #DAAF4D;">
+                            <img class="sliding-image hidden" src="./static/images/reviews/Ellipse 180.png" alt="">
+                            <p style="font-size: 24px;text-align: left;font-weight: 600;margin-bottom: 0px;"
+                                class="card-title">Aaliya</p>
+                            <p style="font-size: 16px;text-align: left;color: #D3D2E1;" class="card-title">
+                                Software Engineer <br>
+                                I couldn't believe how easy and fast the process was with [Your Company Name].
+                                Within 24 hours, I was approved for a loan, and now I'm driving my dream car!
+                                The team was incredibly helpful and answered all my questions. Highly recommend!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item2">
+                    <div class="col-md-4"
+                        style="background: linear-gradient(180deg, rgba(218, 175, 77, 1) 0%, rgba(30, 52, 38, 0.5) 90%);margin-right: 10px;">
+                        <div class="card-body" style="padding: 20px;  border: 1px solid #DAAF4D;">
+                            <img class="sliding-image hidden" src="./static/images/reviews/image 29.png" alt="">
+                            <p style="font-size: 24px;text-align: left;font-weight: 600;margin-bottom: 0px;"
+                                class="card-title">Aaliya</p>
+                            <p style="font-size: 16px;text-align: left;color: #D3D2E1;" class="card-title">
+                                Software Engineer <br>
+                                I couldn't believe how easy and fast the process was with [Your Company Name].
+                                Within 24 hours, I was approved for a loan, and now I'm driving my dream car!
+                                The team was incredibly helpful and answered all my questions. Highly recommend!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br><br>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------- Feedback ---------------------------------------------------------------- -->
+    <div style="background-image: url('./static/images/bg.png');width: 100%;">
+        <div id="Contact" class="contact_right" style="padding: 1% 5% 5% 5%;">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h1 style="font-weight: 600;font-size: 68px;" class="title">Contact Us</h1>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <br>
+                    <p style="color: #D3D2E1;">We’re here to assist you. Reach out with any questions or feedback!</p>
+                </div>
+            </div>
+            <br>
+            <div style="background-color: rgba(113, 93, 47, 0.4);padding: 20px 20px 80px 20px;">
+                <h1 style="font-weight: 600;" class="title text-center">Request A Call Back</h1>
+                <form id="contactForm" class="gform" method="post"
+                    action="https://script.google.com/macros/s/AKfycbxnNLdUEhFQyjYs5SonT6h_caSCoJiTa1lQhqBg2tiGLeTyW75Do_B-F2sMHmocMMVS9A/exec">
+
+                    <div class="row m-auto">
+                        <div class="col-md-3 col-sm-12">
+                            <label for="name" class="col-sm-12 col-form-label">Name<sup>*</sup></label>
+                            <input type="text" class="form-control-plaintext" id="name" name="name" value="">
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <label for="email" class="col-sm-12 col-form-label">Email<sup>*</sup></label>
+                            <input type="text" class="form-control-plaintext" id="email" name="email" value="">
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <label for="message" class="col-sm-12 col-form-label">Phone Number</label>
+                            <input type="text" class="form-control-plaintext" id="message" name="message" value="">
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <br>
+                            <button style="margin: 15px 0px 0px 20px;" type="submit" class="btnSendMsg">Send Message <i
+                                    class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------- Footer ---------------------------------------------------------------- -->
+    <br>
+    <footer>
+        <div class="container m-auto text-center row footerDiv">
+            <div class="col-lg-4">
+                <img class="sliding-image hidden" src="./static/images/footer/call.png" alt="">
+                <p>+91 8885554354</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="sliding-image hidden" src="./static/images/footer/email.png" alt="">
+                <p>sgservice@gmail.com</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="sliding-image hidden" src="./static/images/footer/location.png" alt="">
+                <p>Central road no.3, Hyderabad,India.</p>
+            </div>
+        </div>
+        <div class="my-1 m-auto" style="height: 1.5px;background: #8B8A8A;width: 90%;"></div>
+        <div class="container m-auto text-center row">
+            <div class="col-lg-4">
+                <a href="">Home</a>
+                <a href="#AboutUs">About Us</a>
+                <a href="#Products">Products</a>
+                <a href="#Services">Services</a>
+            </div>
+            <div class="col-lg-4">
+                <a href="#Contact">Contact</a>
+                <a href="#Testimonials">Testimonials</a>
+            </div>
+            <div class="col-lg-4">
+                <a href="">Terms Of Use</a>
+                <a href="">Policy & Privacy</a>
+                <a href="">Legal Notice</a>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="#" title="Twitter" target="_blank"><img src="./static/images/footer/twitter.png" alt="twitter"></a>
+            <a href="#" title="Instagram" target="_blank"><img src="./static/images/footer/insta.png" alt="twitter"></a>
+            <a href="#" title="LinkedIn" target="_blank"><img src="./static/images/footer/linkedin.png"
+                    alt="twitter"></a>
+            <a href="#" title="YouTube" target="_blank"><img src="./static/images/footer/youtube.png" alt="twitter"></a>
+            <a href="#" title="Facebook" target="_blank"><img src="./static/images/footer/fb.png" alt="twitter"></a>
+        </div>
+        <div class="text-center my-2">© 2024 SG Services. All rights reserved.</div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const form = event.target;
+            const formData = new FormData(form); // Gather all form data
+
+            // Display loading or disable the submit button (optional)
+            const submitButton = form.querySelector('.btnSendMsg');
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+
+            // Send the form data via AJAX (Fetch API)
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.result === 'success') {
+                        alert("Message sent successfully!")
+                        // document.getElementById('responseMessage').innerHTML = '<p>Message sent successfully!</p>';
+                    } else {
+                        alert('Failed to send the message. Please try again.')
+                        // document.getElementById('responseMessage').innerHTML = '<p>Failed to send the message. Please try again.</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    // document.getElementById('responseMessage').innerHTML = '<p>An error occurred. Please try again later.</p>';
+                })
+                .finally(() => {
+                    // Reset button and form
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Send Message';
+                    form.reset();
+                });
+        });
+    </script>
+    <script>
+        document.addEventListener("scroll", function () {
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+            let currentSection = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100; // Offset to account for the fixed navbar
+                const sectionHeight = section.offsetHeight;
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === `#${currentSection}`) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).on("scroll", function () {
+                $(".sliding-image").each(function () {
+                    var imageTop = $(this).offset().top;
+                    var windowBottom = $(window).scrollTop() + $(window).height();
+
+                    if (windowBottom > imageTop) {
+                        $(this).addClass("show").removeClass("hidden");
+                    }
+                });
+            });
+        });
+        //counter up only 1 line
+        $(document).ready(() => $('.counter').counterUp({ delay: 10, time: 2000 }));
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".clickable-image");
+            const popup = document.getElementById("popup");
+            const popupImage = document.getElementById("popup-image");
+            const closePopup = document.getElementById("close-popup");
+
+            // Add click event to each image
+            images.forEach(image => {
+                image.addEventListener("click", function () {
+                    const imgSrc = this.src; // Get the clicked image's source
+                    popupImage.src = imgSrc; // Set it to the popup image
+                    popup.classList.remove("hidden2"); // Show the popup
+                });
+            });
+
+            // Close the pop-up when the close button is clicked
+            closePopup.addEventListener("click", function () {
+                popup.classList.add("hidden2");
+            });
+
+            // Close the pop-up when clicking outside the content
+            popup.addEventListener("click", function (e) {
+                if (e.target === popup) {
+                    popup.classList.add("hidden2");
+                }
+            });
+        });
+
+    </script>
+
+    <!-- -------------------------------------------------trial -------------------------------------------------------------------- -->
+    <script type='text/javascript'>$('.carousel .carousel-item').each(function () {
+            var minPerSlide = 4;
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i = 0; i < minPerSlide; i++) {
+                next = next.next(); if (!next.length) { next = $(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this));
+            }
+        });
+    </script>
+    <script type='text/javascript'>$('.carousel2 .carousel-item2').each(function () {
+            var minPerSlide = 4;
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i = 0; i < minPerSlide; i++) {
+                next = next.next(); if (!next.length) { next = $(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this));
+            }
+        });
+    </script>
+
+</body>
+
+</html>
